@@ -34,7 +34,7 @@ services:
     networks: [dvnode]
     stop_grace_period: 2m
     volumes:
-      - ${BASE_DIR:-.}/lighthouse/beacon-node/holesky:/root/.ethereum
+      - ${BASE_DIR:-.}/geth:/root/.ethereum
       - ./jwt:/root/jwt
     restart: unless-stopped
 
